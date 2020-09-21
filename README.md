@@ -1,4 +1,4 @@
-# Nuxt App Starter (basic)
+# Nuxt App Starter (prismic)
 
 > A starter template for helping jump start development of nuxt apps
 

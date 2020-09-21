@@ -1,10 +1,1 @@
-{
-  "description": "Hello world",
-  "name": "My site",
-  "icon": "src/static/icon.png",
-  "theme": {
-    "primary": "#ffffff",
-    "secondary": "#ffffff"
-  },
-  "title": "My site"
-}
+{"id":"X2gvJBAAACMAghCv","uid":null,"type":"site_config","href":"https://firesmith.cdn.prismic.io/api/v2/documents/search?ref=X2gvKhAAACYAghDM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22X2gvJBAAACMAghCv%22%29+%5D%5D","tags":[],"first_publication_date":"2020-09-21T04:42:18+0000","last_publication_date":"2020-09-21T04:42:18+0000","slugs":["firesmith-app"],"linked_documents":[],"lang":"en-us","alternate_languages":[],"data":{"icon":{"dimensions":{"width":512,"height":512},"alt":null,"copyright":null,"url":"https://images.prismic.io/slicemachine-blank/26d81419-4d65-46b8-853e-8ea902e160c1_groovy.png?auto=compress,format&rect=409,0,1536,1536&w=512&h=512"},"title":"Firesmith app","description":"A starter template","primary":"#6783c7","secondary":"#ff8f00"}}

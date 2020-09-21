@@ -71,6 +71,7 @@ typings/
 # Nuxt generate
 dist
 src/static/icons
+src/static/favicon.ico
 
 # vuepress build output
 .vuepress/dist
