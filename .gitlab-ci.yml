@@ -1,0 +1,41 @@
+image: node:10.15.3
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.yarn"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .yarn
+    - cache/Cypress
+    - node_modules/
+
+before_script:
+  - yarn install
+
+stages:
+  - test
+
+# all jobs that actually run tests can use the same definition
+.job_template: &job
+  image: cypress/base:10
+  stage: test
+  script:
+    # print CI environment variables for reference
+    # - $(npm bin)/print-env CI
+    # start the server in the background
+    - yarn cypress:run
+    # run Cypress test in load balancing mode
+    # - npm run e2e:record -- --parallel --group "electrons on GitLab CI"
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
+  only:
+    - master
+
+test-base:
+  <<: *job

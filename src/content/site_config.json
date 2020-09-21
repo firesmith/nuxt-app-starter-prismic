@@ -1,0 +1,10 @@
+{
+  "description": "Hello world",
+  "name": "My site",
+  "icon": "src/static/icon.png",
+  "theme": {
+    "primary": "#ffffff",
+    "secondary": "#ffffff"
+  },
+  "title": "My site"
+}

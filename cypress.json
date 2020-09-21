@@ -1,0 +1,6 @@
+{
+  "projectId": "jfpcto",
+  "ignoreTestFiles": [
+    "**/examples/*"
+  ]
+}
