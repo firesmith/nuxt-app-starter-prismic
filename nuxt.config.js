@@ -93,8 +93,32 @@ export default async ({ command }) => {
     plugins: ['@/plugins/composition-api'],
 
     prismic: {
+      apiOptions: {
+        // example resolving documents with type `page` to `/:uid`
+        routes: [
+          {
+            path: '/:uid',
+            type: 'page',
+          },
+        ],
+      },
       deferLoad: true,
       endpoint,
+      linkResolver ({ isBroken, type, uid }) {
+        if (isBroken) {
+          return '/not-found'
+        }
+
+        switch (type) {
+          case 'homepage':
+            return '/'
+          case 'page':
+            return '/' + uid
+          default:
+            return '/not-found'
+        }
+      },
+      preview: command === 'dev' || process.env.PRISMIC_PREVIEW,
     },
 
     pwa: {

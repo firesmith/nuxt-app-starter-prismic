@@ -2,7 +2,6 @@
   <div>
     <h1>{{ error.statusCode }}</h1>
     <p>{{ error.message }}</p>
-    <nuxt-content :document="page" />
 
     <nuxt-link to="/">
       Home
