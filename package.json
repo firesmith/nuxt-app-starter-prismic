@@ -24,16 +24,17 @@
   "dependencies": {
     "@nuxt/content": "^1.4.1",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "@vue/composition-api": "^1.0.0-beta.1",
-    "nuxt": "^2.13.2"
+    "@vue/composition-api": "^1.0.0-beta.16",
+    "nuxt": "^2.13.2",
+    "nuxt-property-decorator": "^2.8.8"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.4.1",
     "@nuxt/typescript-build": "^2.0.3",
-    "@nuxtjs/eslint-config": "^3.0.0",
     "@nuxtjs/eslint-config-typescript": "^3.0.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/eslint-module": "^3.0.0",
     "@nuxtjs/prismic": "^1.2.4",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "@types/bluebird": "^3.5.32",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "babel-eslint": "^10.0.1",
@@ -41,7 +42,7 @@
     "browser-env": "^3.3.0",
     "cypress": "^5.2.0",
     "cypress-vue-unit-test": "^3.0.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.11.0",
     "eslint-plugin-cypress": "^2.8.1",
     "eslint-plugin-nuxt": "^1.0.0",
     "husky": "^4.2.5",
@@ -49,6 +50,8 @@
     "nuxt-rfg-icon": "^0.6.4",
     "require-extension-hooks": "^0.3.3",
     "require-extension-hooks-babel": "^1.0.0",
-    "require-extension-hooks-vue": "^3.0.0"
+    "require-extension-hooks-vue": "^3.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

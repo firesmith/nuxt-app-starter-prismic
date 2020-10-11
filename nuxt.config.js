@@ -54,7 +54,7 @@ export default async ({ command }) => {
       '@nuxt/typescript-build',
       '@nuxtjs/eslint-module',
       '@nuxtjs/prismic',
-
+      '@nuxtjs/stylelint-module',
     ],
     /*
     ** Global CSS
@@ -90,7 +90,7 @@ export default async ({ command }) => {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: ['@/plugins/composition-api'],
+    plugins: ['~/plugins/composition-api', '~/plugins/global'],
 
     prismic: {
       apiOptions: {

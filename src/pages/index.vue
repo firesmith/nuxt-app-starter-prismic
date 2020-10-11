@@ -57,7 +57,6 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   padding: 1rem;
-  /* align-items: center; */
   text-align: center;
 }
 
